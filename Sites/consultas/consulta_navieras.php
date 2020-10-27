@@ -23,6 +23,6 @@
   <?php
 	foreach ($navieras as $p) {
 		echo "<tr> <td>$p[0]</td> <td>$p[1]</td> <td>$p[2]</td> <td>$p[3]</td> <td>$p[4]</td> <td>$p[5]</td> </tr>";
-	}
+	  }
   ?>
 	</table>
