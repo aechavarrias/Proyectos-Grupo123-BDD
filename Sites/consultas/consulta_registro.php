@@ -33,18 +33,22 @@
   $checkResult -> execute();
 
   $checkAns = $checkResult -> fetchAll();
+  if (is_null($checkAns)) {
+    
+      $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :pword)"; 
+      $result = $db1 -> prepare($query);
+      
+      $result -> bindValue(':id', $id); 
+      $result -> bindValue(':nombre', $nombre); 
+      $result -> bindValue(':edad', $edad);
+      $result -> bindValue(':sexo', $sexo);
+      $result -> bindValue(':pasaporte', $pasaporte);
+      $result -> bindValue(':nacionalidad', $nacionalidad);
+      $result -> bindValue(':pword', $contraseña);
+      $result -> execute();
+  }
 
-  $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :pword)"; 
-  $result = $db1 -> prepare($query);
-  
-  $result -> bindValue(':id', $id); 
-  $result -> bindValue(':nombre', $nombre); 
-  $result -> bindValue(':edad', $edad);
-  $result -> bindValue(':sexo', $sexo);
-  $result -> bindValue(':pasaporte', $pasaporte);
-  $result -> bindValue(':nacionalidad', $nacionalidad);
-  $result -> bindValue(':pword', $contraseña);
-  $result -> execute();
+
 
   // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
 
