@@ -25,21 +25,15 @@
   $pasaporte = $_POST["upasaporte"];
   $nacionalidad = $_POST["unacionalidad"];
   $contraseña = $_POST["ucontraseña"];
-  // $nombre = "unombre";
-  // $edad = "uedad";
-  // $sexo = "usexo";
-  // $pasaporte = "upasaporte";
-  // $nacionalidad = "unacionalidad";
-  // $contraseña = "ucontraseña";
-  // $data = [
-  //   'id' => $id,
-  //   'nombre' => $nombre,
-  //   'edad' => $edad,
-  //   'sexo' => $sexo,
-  //   'pasaporte' => $pasaporte,
-  //   'nacionalidad' => $nacionalidad,
-  //   'contraseña' => $contraseña,
-  // ];
+  
+
+  $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte == :pasaporte"
+  $checkResult = $db1 -> prepare($check)
+  $checkResult -> bindValue(':pasaporte', $pasaporte);
+  $checkResult -> execute();
+
+  $checkAns -> $checkResult -> fetchAll();
+
   $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :pword)"; 
   $result = $db1 -> prepare($query);
   
@@ -58,12 +52,12 @@
 	$usuarios = $result -> fetchAll();
   ?>
 
-	<table>
+  <table>
     <tr>
-      <th>Nombre</th>
+      <th>Pasaportes</th>
     </tr>
   <?php
-	foreach ($usuarios as $us) {
+	foreach ($checkAns as $us) {
   		echo "<tr> <td>$us[0]</td> <td>";
 	}
   ?>
