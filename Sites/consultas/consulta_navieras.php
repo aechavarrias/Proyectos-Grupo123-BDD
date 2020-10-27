@@ -6,22 +6,25 @@
   require("../config/conexion.php");
 
 	#$tipo = $_POST["tipo_elegido"];
-	$nombre = $_POST["nombre"];
+	#$nombre = $_POST["nombre"];
 
- 	$query = "SELECT nombre FROM usuarios;";
+ 	$query = "SELECT * FROM navieras;";
 	#WHERE tipo LIKE '%$tipo%' AND nombre LIKE '%$nombre%';";
 	$result = $db1 -> prepare($query);
 	$result -> execute();
-	$usuarios = $result -> fetchAll();
+	$navieras = $result -> fetchAll();
   ?>
 
 	<table>
     <tr>
       <th>Nombre</th>
+	  <th>Pais Origen</th>
+	  <th>Giro</th>
+	  <th>Nom</th>
     </tr>
   <?php
-	foreach ($usuarios as $us) {
-  		echo "<tr> <td>$us[0]</td> <td>";
-	}
+	foreach ($navieras as $p) {
+		echo "<tr> <td>$p[0]</td> <td>$p[1]</td> <td>$p[2]</td> <td>$p[3]</td> <td>$p[4]</td> <td>$p[5]</td> </tr>";
+	  }
   ?>
 	</table>
