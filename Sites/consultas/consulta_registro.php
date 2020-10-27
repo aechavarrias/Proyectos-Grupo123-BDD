@@ -47,10 +47,14 @@
       $result -> bindValue(':pword', $contraseña);
       $result -> execute();
 
-	    $usuarios = $result -> fetchAll();
+      $usuarios = $result -> fetchAll();
+      header("Location: ../ingreso/perfil.php");
+      exit();
   }
   else {
     echo("Ya existe un usuario con ese numero de pasaporte.");
+    header("Location: https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    exit();
   }
 
 
