@@ -9,6 +9,7 @@
 	#$tipo = $_POST["tipo_elegido"];
 	$nombre = $_POST["nanombre"];
 
+
  	$query = "SELECT A.buid from pesca A inner join buques B on A.buid = b.buid WHERE B.num_personas = (select MAX(D.num_personas) FROM pesca C INNER JOIN buques D ON C.buid = D.buid)";
 	#WHERE tipo LIKE '%$tipo%' AND nombre LIKE '%$nombre%';";
 	$result = $db -> prepare($query);

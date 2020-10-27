@@ -10,12 +10,12 @@
 
  	$query = "SELECT * FROM navieras;";
 	#WHERE tipo LIKE '%$tipo%' AND nombre LIKE '%$nombre%';";
-	$result = $db1 -> prepare($query);
+	$result = $db -> prepare($query);
 	$result -> execute();
 	$navieras = $result -> fetchAll();
   ?>
 
-  
+
 
 	<table>
     <tr>
