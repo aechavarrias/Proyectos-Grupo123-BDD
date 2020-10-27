@@ -31,10 +31,12 @@
   $resultID -> execute();
 
   $maxId = $resultID -> fetchAll();
-  
+
   echo $maxId ?? 'ID QLO';
 
   $id = $maxId[0];
+
+  echo $id ?? 'ID QLO';
 
 
   $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
