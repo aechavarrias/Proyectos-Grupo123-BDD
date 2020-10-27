@@ -36,7 +36,9 @@
 
   $id = $maxId[0];
 
-  echo $id ?? 'ID QLO';
+  foreach($maxId as $obj){
+    echo($obj);
+  }
 
 
   $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
