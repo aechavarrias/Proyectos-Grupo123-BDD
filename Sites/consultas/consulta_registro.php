@@ -29,7 +29,6 @@
 
   $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte = '%$pasaporte%';";
   $checkResult = $db1 -> prepare($check);
-  $checkResult -> bindValue(':pasaporte', $pasaporte);
   $checkResult -> execute();
 
   $checkAns = $checkResult -> fetchAll();
