@@ -46,6 +46,8 @@
       $result -> bindValue(':nacionalidad', $nacionalidad);
       $result -> bindValue(':pword', $contraseña);
       $result -> execute();
+      
+	    $usuarios = $result -> fetchAll();
   }
 
 
@@ -53,16 +55,4 @@
   // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
 
   // $result -> execute($data);
-	$usuarios = $result -> fetchAll();
   ?>
-
-  <table>
-    <tr>
-      <th>Pasaportes</th>
-    </tr>
-  <?php
-	foreach ($checkAns as $us) {
-  		echo "<tr> <td>$us[0]</td> <td>";
-	}
-  ?>
-	</table>
