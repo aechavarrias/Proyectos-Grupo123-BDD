@@ -51,7 +51,7 @@
   }
 
   header( 'refresh:5;url=youtube.com/watch?v=dQw4w9WgXcQ', TRUE);
-  echo('Redirecting in 5 secs. Click here to go directly <a href=www.youtube.com/watch?v=dQw4w9WgXcQ>here</a>.');
+  echo('Redirecting in 5 secs. Click here to go directly <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>here</a>.');
 
   // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
 
