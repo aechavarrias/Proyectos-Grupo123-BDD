@@ -43,14 +43,16 @@
   $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :contraseña)"; 
   $result = $db1 -> prepare($query);
   
-  $result -> bindValue(':id', $id)); 
-  $result -> bindValue(':nombre', $nombre)); 
-  $result -> bindValue(':edad', $edad));
-  $result -> bindValue(':sexo', $sexo));
-  $result -> bindValue(':pasaporte', $pasaporte));
-  $result -> bindValue(':nacionalidad', $nacionalidad));
-  $result -> bindValue(':contraseña', $contraseña));
+  $result -> bindValue(':id', $id); 
+  $result -> bindValue(':nombre', $nombre); 
+  $result -> bindValue(':edad', $edad);
+  $result -> bindValue(':sexo', $sexo);
+  $result -> bindValue(':pasaporte', $pasaporte);
+  $result -> bindValue(':nacionalidad', $nacionalidad);
+  $result -> bindValue(':contraseña', $contraseña);
   $result -> execute();
+
+  // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
 
   // $result -> execute($data);
 	$usuarios = $result -> fetchAll();
