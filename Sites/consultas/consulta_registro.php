@@ -31,19 +31,28 @@
   // $pasaporte = "upasaporte";
   // $nacionalidad = "unacionalidad";
   // $contraseña = "ucontraseña";
-  $data = [
-    ':id' => $id,
-    ':nombre' => $nombre,
-    ':edad' => $edad,
-    ':sexo' => $sexo,
-    ':pasaporte' => $pasaporte,
-    ':nacionalidad' => $nacionalidad,
-    ':contraseña' => $contraseña,
-  ];
+  // $data = [
+  //   'id' => $id,
+  //   'nombre' => $nombre,
+  //   'edad' => $edad,
+  //   'sexo' => $sexo,
+  //   'pasaporte' => $pasaporte,
+  //   'nacionalidad' => $nacionalidad,
+  //   'contraseña' => $contraseña,
+  // ];
   $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :contraseña)"; 
   $result = $db1 -> prepare($query);
   
-  $result -> execute($data);
+  $result -> bindValue(':id', $id)); 
+  $result -> bindValue(':nombre', $nombre)); 
+  $result -> bindValue(':edad', $edad));
+  $result -> bindValue(':sexo', $sexo));
+  $result -> bindValue(':pasaporte', $pasaporte));
+  $result -> bindValue(':nacionalidad', $nacionalidad));
+  $result -> bindValue(':contraseña', $contraseña));
+  $result -> execute();
+
+  // $result -> execute($data);
 	$usuarios = $result -> fetchAll();
   ?>
 
