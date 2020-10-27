@@ -1,96 +1,96 @@
 <?php include('templates/header.html');   ?>
 
 <body>
-  <h1 align="center">Biblioteca Navieras </h1>
-  <p style="text-align:center;">Aquí podrás encontrar información sobre las navieras.</p>
+<br/><br/>
+  <h1 align="center" href="#ingresar" id="ingresar">INGRESAR </h1>
+  <p style="text-align:center;" class="section-subheading text-muted" >Ingresa tus datos para acceder!</p>
 
   <br>
+  
+  <form align="center" action="ingreso/perfil.php" method="post">
+    <div class="text-center">
+    <div class="row align-items-stretch mb-5">
+      <div class="col-md-6">
+        
+        <div class="form-group">
+            <input class="form-control" id="pasaporte" type="text" placeholder="Número pasaporte *" required="required" data-validation-required-message="Por favor ingresa tu pasaporte" />
+            <p class="help-block text-danger"></p>
+        </div>
+        
+        <div class="form-group">
+          <input class="form-control" id="contraseña" type="text" placeholder="Contraseña *" required="required" data-validation-required-message="Por favor ingresa tu contraseña" />
+          <p class="help-block text-danger"></p>
+        </div>  
 
-  <h3 align="center"> Ver todos los nombre del personal:</h3>
+      </div>            
+    </div>
 
-  <form align="center" action="consultas/consulta_1.php" method="post">
+    <div class="text-center">
+        <div id="success"></div>
+        <button class="btn btn-primary btn-xl text-uppercase" id="ingresar" type="submit">Ingresar</button>
+    </div>
+    
+  </form>
+  <br>
+  <br>
+  <br>
+  <br/><br/>
+  <h1 align="center" href="#registrar" id="registrar" >REGISTRATE </h1>
+  <p style="text-align:center;" class="section-subheading text-muted">Ingresa tus datos para registrarte!</p>
+
+  <br>
+  
+  <form align="center" action="consultas/consulta_registro.php" method="post">
+  <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="form-group">
+            <input class="form-control" id="nombre" type="text" name="unombre" placeholder="nombre *" required="required" data-validation-required-message="Por favor ingresa tu nombre" />
+            <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="edad" type="number" name="uedad" placeholder="edad *" required="required" data-validation-required-message="Por favor ingresa tu edad" />
+          <p class="help-block text-danger"></p>
+        </div> 
+
+        <select class="form-control" id="sexo" name="usexo">
+          <option value="mujer" name="mujer" >Mujer</option>
+          <option value="hombre" name="hombre" >Hombre</option>
+          <option value="otro" name="otro" >Otro</option>
+        </select>
+        <div class="form-group">
+          <input class="form-control" id="pasaporte" type="text" name="upasaporte" placeholder="pasaporte *" required="required" data-validation-required-message="Por favor ingresa tu número de pasaporte" />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="nacionalidad" type="text" name="unacionalidad" placeholder="nacionalidad *" required="required" data-validation-required-message="Por favor ingresa tu nacionalidad" />
+          <p class="help-block text-danger"></p>
+        </div>
+        <div class="form-group">
+          <input class="form-control" id="contraseña" type="text" name="ucontraseña" placeholder="contraseña *" required="required" data-validation-required-message="Por favor ingresa tu contraseña" />
+          <p class="help-block text-danger"></p>
+        </div>                 
+        </div>            
+      </div>
+
+    <div class="text-center">
+        <div id="success"></div>
+        <button value = "Registrar" class="btn btn-primary btn-xl text-uppercase" id="registrar" type="submit">Registrar</button>
+    </div>
     <br/>
     <br/><br/>
-    <input type="submit" value="Ver">
   </form>
   
   <br>
   <br>
   <br>
 
-  <h3 align="center">  Todos los buques de la naviera ‘Francis Drake S.A.’.</h3>
-
-  <form align="center" action="consultas/consulta_2.php" method="post">
-    <br/><br/>
-    <input type="submit" value="Buscar">
-  </form>
   
-  <br>
-  <br>
-  <br>
-
-  <h3 align="center"> Todos los buques que hayan atracado en ‘Valparaiso’ el 2020: </h3>
-
-  <form align="center" action="consultas/consulta_3.php" method="post">
-    <br/><br/>
-    <input type="submit" value="Buscar">
   </form>
-  <br>
-  <br>
-  <br>
-
-  <h3 align="center">Todos los buques que hayan estado en ‘Mejillones’ al mismo tiempo que el
-buque ‘Magnolia’.</h3>
-
-  <?php
-  #Primero obtenemos todos los tipos de pokemones
-  require("config/conexion.php");
-  $result = $db -> prepare("SELECT DISTINCT tipo FROM pokemones;");
-  $result -> execute();
-  $dataCollected = $result -> fetchAll();
-  ?>
-
-  <form align="center" action="consultas/consulta_4.php" method="post">
-      <?php
-      #Para cada tipo agregamos el tag <option value=value_of_param> visible_value </option>
-      foreach ($dataCollected as $d) {
-        echo "<option value=$d[0]>$d[0]</option>";
-      }
-      ?>
-    </select>
-    <br><br>
-    <input type="submit" value="Buscar">
-  </form>
-
-  <br>
-  <br>
-  <br>
-  <br>
-    <br>
-
-  <h3 align="center"> Todos los capitanes mujeres que han pasado por el puerto ‘Talcahuano’.:</h3>
-
-  <form align="center" action="consultas/consulta_5.php" method="post">
-    <br/>
-    <br/><br/>
-    <input type="submit" value="Ver">
-  </form>
-  
-  <br>
-  <br>
-  <br>
-  <h3 align="center"> Buque pesquero que tiene más personas trabajando:</h3>
-
-  <form align="center" action="consultas/consulta_6.php" method="post">
-    <br/>
-    <br/><br/>
-    <input type="submit" value="Ver">
-  </form>
-  
   <br>
   <br>
   <br>
 
 
 </body>
+<?php include('templates/footer.html');   ?>
 </html>
