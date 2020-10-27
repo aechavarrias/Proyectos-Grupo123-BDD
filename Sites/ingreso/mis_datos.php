@@ -28,8 +28,10 @@
   $checkResult -> execute();
 
   $checkAns = $checkResult -> fetchAll();
-  echo "<tr> <td>$checkAns[0][0]</td> <td>$checkAns[0][1]</td> <td>$checkAns[0][2]</td> <td>$checkAns[0][3]</td> <td>$checkAns[0][4]</td> <td>$checkAns[0][5]</td> </tr>";
-
+  
+  foreach ($checkAns as $ans) {
+    echo "<tr> <td> $ans[0]</td> <td>$ans[1]</td> <td>$ans[2]</td> <td>$ans[3]</td> <td>$ans[4]</td> <td>$ans[5]</td> </tr>";
+  }
 
 
   // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
