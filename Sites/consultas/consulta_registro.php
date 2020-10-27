@@ -28,7 +28,7 @@
   
   $checkID = "SELECT MAX(id) FROM usuarios;";
 
-  $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte = '%$pasaporte%';";
+  $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
   $checkResult = $db1 -> prepare($check);
   $checkResult -> execute();
 
