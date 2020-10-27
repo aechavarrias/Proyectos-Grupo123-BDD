@@ -37,7 +37,7 @@
     'sexo' => $sexo,
     'pasaporte' => $pasaporte,
     'nacionalidad' => $nacionalidad,
-    'contraseña' => $contraseña,
+    'contraseña' => $contraseña
   ];
   $query = "INSERT INTO usuarios (id, nombre, edad, sexo, pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :contraseña)"; 
   $result = $db1 -> prepare($query);
