@@ -26,7 +26,16 @@
   $nacionalidad = $_POST["unacionalidad"];
   $contraseña = $_POST["ucontraseña"];
   
-  $checkID = "SELECT MAX(id) FROM usuarios;";
+  $checkQuery = "SELECT MAX(id) FROM usuarios;";
+  $resultID = $db1 -> prepare($checkQuery);
+  $resultID -> execute();
+
+  $maxId = $resultID -> fetchAll();
+  
+  echo $maxId ?? 'ID QLO';
+
+  $id = $maxId[0];
+
 
   $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
   $checkResult = $db1 -> prepare($check);
