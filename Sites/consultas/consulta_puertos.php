@@ -5,7 +5,7 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
- 	$query = "SELECT * FROM puertos";
+ 	$query = "SELECT * FROM puerto";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$puertos = $result -> fetchAll();
