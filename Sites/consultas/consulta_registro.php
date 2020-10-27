@@ -49,9 +49,9 @@
 
       $usuarios = $result -> fetchAll();
   }
-
-  header( 'refresh:5;url=youtube.com/watch?v=dQw4w9WgXcQ', TRUE);
-  echo('Redirecting in 5 secs. Click here to go directly <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>here</a>.');
+  else {
+    echo('El pasaporte ingresado ya existe, corríjalo <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>AQUI</a>.');
+  }
 
   // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
 
