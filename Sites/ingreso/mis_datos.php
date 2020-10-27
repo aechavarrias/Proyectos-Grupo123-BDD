@@ -18,36 +18,17 @@
   #$result->bindParam(':nacionalidad', $nacionalidad);
   #$result->bindValue(':contraseña', $contraseña);
 
-  $id = 100;
-  $pasaporte = $_POST["upasaporte"];
-  $contraseña = $_POST["ucontraseña"];
+  $pasaporte = $_POST["pasaporte"];
+  $contraseña = $_POST["contraseña"];
   
   #$checkID = "SELECT MAX(id) FROM usuarios;";
 
-  $check = "SELECT numero_pasaporte, contraseña FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%' AND contraseña LIKE '%$contraseña%';";
+  $check = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%' AND contraseña LIKE '%$contraseña%';";
   $checkResult = $db1 -> prepare($check);
   $checkResult -> execute();
 
   $checkAns = $checkResult -> fetchAll();
-  if (empty($checkAns)) {
-
-    echo("Ya existe un usuario con ese numero de pasaporte.");
-    header("Location: https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-    exit();
-      
-  }
-  else {
-    $result = $db1 -> prepare($query);
-    
-    $result -> bindValue(':id', $id); 
-    $result -> bindValue(':pasaporte', $pasaporte);
-    $result -> bindValue(':pword', $contraseña);
-    $result -> execute();
-
-    $usuarios = $result -> fetchAll();
-    header("Location: ../ingreso/perfil.php");
-    exit();
-  }
+  echo "<tr> <td>$checkAns[0][0]</td> <td>$checkAns[0][1]</td> <td>$checkAns[0][2]</td> <td>$checkAns[0][3]</td> <td>$checkAns[0][4]</td> <td>$checkAns[0][5]</td> </tr>";
 
 
 
