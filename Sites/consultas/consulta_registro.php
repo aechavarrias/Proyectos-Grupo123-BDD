@@ -53,8 +53,8 @@
   else {
     echo('El pasaporte ingresado ya existe, corríjalo <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>AQUI</a>.');
   }
-  
-  echo $_GET['link'];
+
+  echo $_GET['link'] ?? 'Fallback value';
 
   // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
 
