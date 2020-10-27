@@ -48,7 +48,7 @@
       $result -> execute();
 
       $usuarios = $result -> fetchAll();
-      echo('Usuario registrado correctamente. Vea su perfil <a href=../ingreso/perfil.php>AQUI</a>.')
+      echo('Usuario registrado correctamente. Vea su perfil <a href=../ingreso/perfil.php>AQUI</a>.');
   }
   else {
     echo('El pasaporte ingresado ya existe, corríjalo <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>AQUI</a>.');
