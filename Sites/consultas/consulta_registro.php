@@ -50,7 +50,7 @@
 	    $usuarios = $result -> fetchAll();
   }
   else {
-    echo("Ya existe un usuario con ese numero de pasaporte.")
+    echo("Ya existe un usuario con ese numero de pasaporte.");
   }
 
 
