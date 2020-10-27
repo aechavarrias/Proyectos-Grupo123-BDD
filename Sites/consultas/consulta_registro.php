@@ -5,20 +5,7 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
-  #$tipo = $_POST["tipo_elegido"];
-  
-  #$query = "SELECT nombre FROM usuarios;";
-	#WHERE tipo LIKE '%$tipo%' AND nombre LIKE '%$nombre%';";
-  #$result = $db1 -> prepare($query);
-  #$result->bindParam(':id', $id);
-  #$result->bindParam(':nombre', $nombre);
-  #$result->bindParam(':edad', $edad);
-  #$result->bindParam(':sexo', $sexo);
-  #$result->bindParam(':pasaporte', $pasaporte);
-  #$result->bindParam(':nacionalidad', $nacionalidad);
-  #$result->bindValue(':contraseña', $contraseña);
 
-  // $id = 100;
   $nombre = $_POST["unombre"];
   $edad = $_POST["uedad"];
   $sexo = $_POST["usexo"];
@@ -26,19 +13,20 @@
   $nacionalidad = $_POST["unacionalidad"];
   $contraseña = $_POST["ucontraseña"];
   
-  $checkQuery = "SELECT MAX(id) FROM usuarios;";
-  $resultID = $db1 -> prepare($checkQuery);
-  $resultID -> execute();
 
+  $idQuery = "SELECT MAX(id) FROM usuarios;";
+  $resultID = $db1 -> prepare($idQuery);
+  $resultID -> execute();
   $maxId = $resultID -> fetchAll();
 
   $id = $maxId[0][0]+1;
 
-  $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
-  $checkResult = $db1 -> prepare($check);
-  $checkResult -> execute();
 
-  $checkAns = $checkResult -> fetchAll();
+  $passportQuery = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
+  $passportResult = $db1 -> prepare($passportQuery);
+  $passportResult -> execute();
+
+  $checkAns = $passportResult -> fetchAll();
   if (empty($checkAns)) {
     
       $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :pword)"; 
@@ -59,10 +47,4 @@
   else {
     echo('El pasaporte ingresado ya existe, corríjalo <a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ>AQUI</a>.');
   }
-
-  echo $_GET['link'] ?? 'Fallback value';
-
-  // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
-
-  // $result -> execute($data);
   ?>
