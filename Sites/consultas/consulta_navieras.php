@@ -5,11 +5,7 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
-	#$tipo = $_POST["tipo_elegido"];
-	#$nombre = $_POST["nombre"];
-
- 	$query = "SELECT * FROM navieras;";
-	#WHERE tipo LIKE '%$tipo%' AND nombre LIKE '%$nombre%';";
+ 	$query = "SELECT * FROM navieras";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$navieras = $result -> fetchAll();
