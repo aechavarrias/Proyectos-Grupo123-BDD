@@ -23,12 +23,12 @@
   
   #$checkID = "SELECT MAX(id) FROM usuarios;";
 
-  $check = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%' AND contraseña LIKE '%$contraseña%';";
+  $check = "SELECT * FROM usuarios WHERE numero_pasaporte='%$pasaporte%' AND contraseña='%$contraseña%';";
   $checkResult = $db1 -> prepare($check);
   $checkResult -> execute();
 
   $checkAns = $checkResult -> fetchAll();
-  
+
   foreach ($checkAns as $ans) {
     echo "<tr> <td> $ans[0]</td> <td>$ans[1]</td> <td>$ans[2]</td> <td>$ans[3]</td> <td>$ans[4]</td> <td>$ans[5]</td> </tr>";
   }
