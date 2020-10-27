@@ -15,10 +15,10 @@
 
 	<table>
     <tr>
+	  <th>Id</th>
       <th>Nombre</th>
 	  <th>Pais Origen</th>
 	  <th>Giro</th>
-	  <th>Nom</th>
     </tr>
   <?php
 	foreach ($navieras as $p) {
