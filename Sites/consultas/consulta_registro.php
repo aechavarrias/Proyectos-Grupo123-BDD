@@ -46,8 +46,11 @@
       $result -> bindValue(':nacionalidad', $nacionalidad);
       $result -> bindValue(':pword', $contraseña);
       $result -> execute();
-      
+
 	    $usuarios = $result -> fetchAll();
+  }
+  else {
+    echo("Ya existe un usuario con ese numero de pasaporte.")
   }
 
 
