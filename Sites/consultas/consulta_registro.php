@@ -18,7 +18,7 @@
   #$result->bindParam(':nacionalidad', $nacionalidad);
   #$result->bindValue(':contraseña', $contraseña);
 
-  $id = 100;
+  // $id = 100;
   $nombre = $_POST["unombre"];
   $edad = $_POST["uedad"];
   $sexo = $_POST["usexo"];
@@ -34,10 +34,12 @@
 
   echo $maxId ?? 'ID QLO';
 
-  $id = $maxId[0];
+  $id = max($maxId);
+
+  echo $id ?? 'ID QLO';
 
   foreach($maxId as $obj){
-    echo($obj);
+    echo($obj -> max);
   }
 
 
