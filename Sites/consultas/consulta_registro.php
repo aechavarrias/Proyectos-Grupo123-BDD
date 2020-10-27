@@ -19,25 +19,25 @@
   #$result->bindValue(':contraseña', $contraseña);
 
   $id = 100;
-  #$nombre = $_POST["unombre"];
-  #$edad = $_POST["uedad"];
-  #$sexo = $_POST["usexo"];
-  #$pasaporte = $_POST["upasaporte"];
-  #$nacionalidad = $_POST["unacionalidad"];
-  #$contraseña = $_POST["ucontraseña"];
-  $nombre = "unombre";
-  $edad = "uedad";
-  $sexo = "usexo";
-  $pasaporte = "upasaporte";
-  $nacionalidad = "unacionalidad";
-  $contraseña = "ucontraseña";
+  $nombre = $_POST["unombre"];
+  $edad = $_POST["uedad"];
+  $sexo = $_POST["usexo"];
+  $pasaporte = $_POST["upasaporte"];
+  $nacionalidad = $_POST["unacionalidad"];
+  $contraseña = $_POST["ucontraseña"];
+  // $nombre = "unombre";
+  // $edad = "uedad";
+  // $sexo = "usexo";
+  // $pasaporte = "upasaporte";
+  // $nacionalidad = "unacionalidad";
+  // $contraseña = "ucontraseña";
   $data = [
     'nombre' => $nombre,
     'edad' => $edad,
     'sexo' => $sexo,
     'pasaporte' => $pasaporte,
     'nacionalidad' => $nacionalidad,
-    'contraseña' => $contraseña
+    'contraseña' => $contraseña,
   ];
   $query = "INSERT INTO usuarios (id, nombre, edad, sexo, pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :contraseña)"; 
   $result = $db1 -> prepare($query);
