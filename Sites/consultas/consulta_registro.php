@@ -32,6 +32,7 @@
   // $nacionalidad = "unacionalidad";
   // $contraseña = "ucontraseña";
   $data = [
+    'id' => $id,
     'nombre' => $nombre,
     'edad' => $edad,
     'sexo' => $sexo,
