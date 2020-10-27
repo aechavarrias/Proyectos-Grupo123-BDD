@@ -23,7 +23,7 @@
   
   #$checkID = "SELECT MAX(id) FROM usuarios;";
 
-  $check = "SELECT * FROM usuarios WHERE numero_pasaporte='%$pasaporte%' AND contraseña='%$contraseña%';";
+  $check = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%' AND contraseña LIKE '%$contraseña%';";
   $checkResult = $db1 -> prepare($check);
   $checkResult -> execute();
 
