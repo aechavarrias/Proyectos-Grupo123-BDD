@@ -28,11 +28,11 @@
   
 
   $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte == :pasaporte"
-  $checkResult = $db1 -> prepare($check)
+  $checkResult = $db1 -> prepare($check);
   $checkResult -> bindValue(':pasaporte', $pasaporte);
   $checkResult -> execute();
 
-  $checkAns -> $checkResult -> fetchAll();
+  $checkAns = $checkResult -> fetchAll();
 
   $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :pword)"; 
   $result = $db1 -> prepare($query);
