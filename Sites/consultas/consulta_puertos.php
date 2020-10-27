@@ -8,7 +8,7 @@
  	$query = "SELECT * FROM puerto";
 	$result = $db -> prepare($query);
 	$result -> execute();
-	$puertos = $result -> fetchAll();
+	$puerto = $result -> fetchAll();
   ?>
 
 
@@ -19,8 +19,8 @@
       <th>Nombre</th>
     </tr>
   <?php
-	foreach ($puertos as $p) {
-		echo "<tr> <td>$p[0]</td> <td>$p[1]</td> </tr>";
+	foreach ($puerto as $p) {
+		echo "<tr> <td>$p[0]</td> <td>$p[1]</td> <td>$p[2]</td> </tr>";
 	  }
   ?>
 	</table>
