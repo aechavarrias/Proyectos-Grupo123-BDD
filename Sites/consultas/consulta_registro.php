@@ -33,7 +33,7 @@
   $checkResult -> execute();
 
   $checkAns = $checkResult -> fetchAll();
-  if (is_null($checkAns)) {
+  if (empty($checkAns)) {
     
       $query = "INSERT INTO usuarios (id, nombre, edad, sexo, numero_pasaporte, nacionalidad, contraseña) VALUES (:id, :nombre, :edad, :sexo, :pasaporte, :nacionalidad, :pword)"; 
       $result = $db1 -> prepare($query);
