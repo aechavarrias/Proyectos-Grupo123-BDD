@@ -34,7 +34,7 @@
 
   echo $maxId ?? 'ID QLO';
 
-  $id = max($maxId);
+  $id = $maxId[0][0];
 
   echo $id ?? 'ID QLO';
 
