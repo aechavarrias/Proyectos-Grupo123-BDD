@@ -32,16 +32,7 @@
 
   $maxId = $resultID -> fetchAll();
 
-  echo $maxId ?? 'ID QLO';
-
-  $id = $maxId[0][0];
-
-  echo $id ?? 'ID QLO';
-
-  foreach($maxId as $obj){
-    echo($obj -> max);
-  }
-
+  $id = $maxId[0][0]+1;
 
   $check = "SELECT numero_pasaporte FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
   $checkResult = $db1 -> prepare($check);
