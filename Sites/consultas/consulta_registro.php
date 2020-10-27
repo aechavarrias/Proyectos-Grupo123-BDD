@@ -50,14 +50,10 @@
       $usuarios = $result -> fetchAll();
   }
 
-
+  header( 'refresh:5;url=youtube.com/watch?v=dQw4w9WgXcQ' );
+  echo('Redirecting in 5 secs. Click here to go directly <a href=”youtube.com/watch?v=dQw4w9WgXcQ”>here</a>.');
 
   // $stmt->execute(array(':titulo' => $titulo, ':descricao' => $descricao, ':preco' => $preco));
 
   // $result -> execute($data);
   ?>
-
-<?php
-  header( “refresh:5;url=youtube.com/watch?v=dQw4w9WgXcQ” );
-  echo ‘Redirecting in 5 secs. Click here to go directly <a href=”youtube.com/watch?v=dQw4w9WgXcQ”>here</a>.’;
-?>
