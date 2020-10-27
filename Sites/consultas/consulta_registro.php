@@ -48,13 +48,6 @@
       $result -> execute();
 
       $usuarios = $result -> fetchAll();
-      header("Location: ../ingreso/perfil.php");
-      exit();
-  }
-  else {
-    echo("Ya existe un usuario con ese numero de pasaporte.");
-    header("Location: https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-    exit();
   }
 
 
@@ -63,3 +56,8 @@
 
   // $result -> execute($data);
   ?>
+
+<?php
+  header( “refresh:5;url=youtube.com/watch?v=dQw4w9WgXcQ” );
+  echo ‘Redirecting in 5 secs. Click here to go directly <a href=”youtube.com/watch?v=dQw4w9WgXcQ”>here</a>.’;
+?>
