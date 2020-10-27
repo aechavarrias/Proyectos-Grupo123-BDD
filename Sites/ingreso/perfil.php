@@ -26,7 +26,7 @@
 
   <br/><br/>
 
-  <form action="../navegacion/puertos.php" method="post">
+  <form action="../consultas/consulta_puertos.php" method="post">
   <div class="text-center">
     <div class="text-center">
         <div id="success"></div>
