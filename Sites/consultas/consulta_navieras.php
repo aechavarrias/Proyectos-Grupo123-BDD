@@ -14,6 +14,7 @@
 	$result -> execute();
 	$navieras = $result -> fetchAll();
   ?>
+  
 
 	<table>
     <tr>
