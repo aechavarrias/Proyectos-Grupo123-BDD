@@ -21,15 +21,8 @@
 	  <th>Giro</th>
     </tr>
   <?php
-  	echo "<td><input type="submit" name="Ver busques" value="ver_buques"/></td> \n";
 	foreach ($navieras as $p) {
 		echo "<tr> <td>$p[0]</td> <td>$p[1]</td> <td>$p[2]</td> <td>$p[3]</td> <td>$p[4]</td> <td>$p[5]</td> </tr>";
-		echo <form align="center" action="ingreso/perfil.php" method="post">
-		echo <div class="text-center">
-		echo <div id="success"></div>
-		echo <button class="btn btn-primary btn-xl text-uppercase" id="ingresar" type="submit">Ingresar</button>
-		echo </div>
-	  	echo </form>
-	}
+	  }
   ?>
 	</table>
