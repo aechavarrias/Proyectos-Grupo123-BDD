@@ -29,20 +29,50 @@ def root():                                                                     
         textQuery +="\""+ r + "\" "
     for f in payload["forbidden"]:
         textQuery +="-" + f + " "
-    print(textQuery)
+
+    # print(type(payload["userId"]))
+
+    try:
+    # if (payload["userId"]):
+        user_searched = payload["userId"]
+        dbMessages.create_index([("message", "text")])
+        queryResult = list(dbMessages.find({"$text": {"$search": textQuery}, "sender": user_searched}, {"_id": 0}))
+
+    except KeyError:
+    # else:
+        dbMessages.create_index([("message", "text")])
+        queryResult = list(dbMessages.find({"$text": {"$search": textQuery}}, {"_id": 0}))
+
+
+    # if type(payload["userId"]) == int:
+    #     user_searched = payload["userId"]
+    #     dbMessages.create_index([("message", "text")])
+    #     queryResult = list(dbMessages.find({"$text": {"$search": textQuery}, "sender": user_searched}, {"_id": 0}))
+    # elif type(payload["userId"]) != int:
+    #     print(type(payload["userId"]))
+    #     dbMessages.create_index([("message", "text")])
+    #     queryResult = list(dbMessages.find({"$text": {"$search": textQuery}}, {"_id": 0}))
+    
+
+
+
+    # print(textQuery)
     # queryResult = list(
     #     db.command("$text"
     #         , value="mensajes"
     #         , search = textQuery
     #         , project = {"_id":0}
     #         )
-    # )
-    dbMessages.create_index([("message", DESCENDING)])
-    queryResult = list(dbMessages.find(
-        {"$text": {"$search": textQuery
-                , "$caseSensitive" : False}}
-        , {"_id": 0}))
+    #     )
+
+    
+
+    print(queryResult)
+
     return str(queryResult)
+
+
+    # return str(textQuery)
 
 @app.route('/messages/', methods=['GET', 'POST'])
 def messages():
