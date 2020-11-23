@@ -39,7 +39,6 @@ Se debe especificar en el body de la forma:
     "date":
 }
 
-
 DELETE:
 
-Elimina un mensaje dado un id especifico: http://127.0.0.1:5000/messages/id_mensaje
+Elimina un mensaje dado un id especifico: http://127.0.0.1:5000/message/id_mensaje
