@@ -44,11 +44,11 @@
 
   <br/><br/>
 
-  <form action="../consultas/consulta_puertos.php" method="post">
+  <form action="../mensajes/textSearchForm.php" method="post">
   <div class="text-center">
     <div class="text-center">
         <div id="success"></div>
-        <button class="btn btn-primary btn-xl text-uppercase" value="ver_puertos" id="puertos" type="submit">Buscar Mensaje Por Texto</button>
+        <button class="btn btn-primary btn-xl text-uppercase" value="text-search" id="text-search" type="submit">Buscar Mensaje Por Texto</button>
     </div>
     <br/>
     <br/><br/>
