@@ -36,7 +36,7 @@
     $_SESSION["MongoID"] = $response[0]['uid'];
     header("Location: ../ingreso/perfil.php");
   } else {
-    header("Location: http://twitter.com/");
+    header("Location: ../ingreso/failedLogin.php");
   }
   // include('../templates/header_inicio.html');
   // header("Location: http://google.com/");
