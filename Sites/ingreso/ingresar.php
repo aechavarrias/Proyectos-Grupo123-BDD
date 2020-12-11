@@ -4,7 +4,7 @@
   require("../config/conexion.php");
 
   $user = $_POST["pasaporte"];
-  $pass = $_POST["contraseña"];
+  $pass = $_POST["pass"];
 
   // $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '$user';";
   echo "er1234 = $user";

@@ -17,12 +17,12 @@
       <div class="col-md-6">
         
         <div class="form-group">
-            <input class="form-control" id="pasaporte" type="text" placeholder="Número pasaporte *" required="required" data-validation-required-message="Por favor ingresa tu pasaporte" />
+            <input class="form-control" id="pasaporte" name="pasaporte" type="text" placeholder="Número pasaporte *" required="required" data-validation-required-message="Por favor ingresa tu pasaporte" />
             <p class="help-block text-danger"></p>
         </div>
         
         <div class="form-group">
-          <input class="form-control" id="contraseña" type="text" placeholder="Contraseña *" required="required" data-validation-required-message="Por favor ingresa tu contraseña" />
+          <input class="form-control" id="contraseña" name="pass" type="text" placeholder="Contraseña *" required="required" data-validation-required-message="Por favor ingresa tu contraseña" />
           <p class="help-block text-danger"></p>
         </div>  
 
