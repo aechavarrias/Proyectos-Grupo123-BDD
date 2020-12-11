@@ -2,7 +2,8 @@ from flask import Flask, request, json, Response, jsonify
 from pymongo import MongoClient, DESCENDING
 import json
 
-app = Flask("Navieras")
+# app = Flask("Navieras")
+app = Flask(__name__)
 
 MESSAGE_KEYS = ["message", "sender", "receptant", "lat", "long", "date"]
 SEARCH_KEYS = ["desired", "required", "forbidden", "userId"]
@@ -149,4 +150,5 @@ def users_id(id):                           # Usuario del id pedido
     return jsonify(users)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(threaded=True, port=5000)
+    # app.run(debug=True)
