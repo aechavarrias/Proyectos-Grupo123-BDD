@@ -10,7 +10,7 @@
 <br/><br/>
   <h1 align="center">Login Fallido</h1>
   <div class="container">
-  <form action="../index.php" method="get">
+  <form action="../index.php#ingresar" method="get">
     <div class="text-center">
         <div id="success"></div>
         <button class="btn btn-primary btn-xl text-uppercase" id="HOME" value="HOME" type="submit">Volver al Inicio</button>
