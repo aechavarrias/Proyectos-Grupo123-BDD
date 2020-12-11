@@ -1,6 +1,5 @@
 <?php 
   session_start();
-  $_SESSION["ingresar"] = "INRESAR";
   include('templates/header.html'); 
 ?>
 
