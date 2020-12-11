@@ -3,7 +3,7 @@
   $user = $_POST["pasaporte"];
   $pass = $_POST["contraseña"];
 
-  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';"
+  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
   $userResult = $db1 -> prepare($userQuery);
   $userResult -> execute();
   $usuario = $userResult -> fetchAll();
