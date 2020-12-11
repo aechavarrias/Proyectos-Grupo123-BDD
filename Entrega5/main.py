@@ -25,7 +25,7 @@ def home():
     '''
     Pagina de inicio
     '''
-    return("<h1>pagina culiaaaaa</h1>")
+    return("<h1>pagina bonita</h1>")
 
 def forbiddenFilter(keywords, message):     # Funcion para eliminar Forbiddens en busquedas vacías
     try:
