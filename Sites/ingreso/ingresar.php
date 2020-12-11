@@ -16,7 +16,7 @@
     $_SESSION["loggged"] = TRUE;
     $_SESSION["username"] = $usuario[0][1];
     // WEVIAR A MONGO / HEROKU
-    $_SESSION["MongoID"] = 0
+    $_SESSION["MongoID"] = 0;
     header("Location: consultas/perfil.php");
   } else {
     header("Location: http://twitter.com/");
