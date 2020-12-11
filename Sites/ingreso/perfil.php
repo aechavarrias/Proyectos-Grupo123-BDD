@@ -1,6 +1,6 @@
 <?php 
-  include('../templates/header_inicio.html');
   session_start();
+  include('../templates/header_inicio.html');
 ?>
 
 
