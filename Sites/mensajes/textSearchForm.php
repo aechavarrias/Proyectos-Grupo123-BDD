@@ -12,7 +12,7 @@
   <div class="row align-items-center mb-5">
       <div class="col-md-6">
         <div class="form-group">
-            <input class="form-control" id="sender" type="number" name="sender" placeholder="ID Emisor" data-validation-required-message="ID Emisor" />
+            <input class="form-control" id="sender" type="text" name="sender" placeholder="ID Emisor" data-validation-required-message="ID Emisor" />
             <p class="help-block text-danger"></p>
         </div>
         <div class="form-group">

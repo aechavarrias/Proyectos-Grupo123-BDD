@@ -8,10 +8,22 @@
 
     $query = $_POST["query"]; 
     $to = $_POST["sender"];
-    $data = array(
-      'userId' => intval($to),
-      'pureQuery' => $query
-    );
+
+    if ($query != "") {
+        $queryArr = array("pureQuery" => $query);
+    }
+    else {
+        $queryArr = array();
+    }
+
+    if ($to != "") {
+        $toArr = array("userId" => intval($to));
+    }
+    else {
+        $toArr = array();
+    }
+
+    $data = $queryArr + $toArr;
 
     $options = array(
         'http' => array(
