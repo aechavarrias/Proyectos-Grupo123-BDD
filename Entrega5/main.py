@@ -146,6 +146,16 @@ def message_id(id):
         dbMessages.delete_one({"mid":id})
         return jsonify([]), 200
 
+@app.route('/users/nombre', methods=['GET'])
+def usersNombre():                          # Todos los usuarios
+    try:
+        usr1 = request.args["nombre"]
+        users = list(dbUsuarios.find({"name":usr1}, {"_id": 0}))
+        return jsonify(users)
+    except KeyError:
+        users = []
+        return jsonify(users)
+
 @app.route('/users', methods=['GET'])
 def users():                                # Todos los usuarios
     try:
