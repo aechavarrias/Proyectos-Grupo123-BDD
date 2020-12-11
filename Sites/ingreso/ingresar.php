@@ -32,9 +32,13 @@
     $context  = stream_context_create( $options );
     $result = file_get_contents( 'https://prometo-que-es-la-ultima.herokuapp.com/users/nombre', false, $context );
     $response = json_decode($result, true);
+
+    $apiName = $response['name'];
+    $apiId = $response['uid'];
+
     echo "response = $response \n";
-    echo "name = $response['name'] \n";
-    echo "ID = $response['uid'] \n";
+    echo "name = $apiName \n";
+    echo "ID = $apiId \n";
 
     // WEVIAR A MONGO / HEROKU
     $_SESSION["MongoID"] = 0;
