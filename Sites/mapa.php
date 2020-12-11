@@ -20,7 +20,7 @@
     ];
 ?>
 
- <div id="mapid" style="height: 300px"></div>
+ <div id="mapid" style="height: 500px"></div>
  </body>
 
  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
