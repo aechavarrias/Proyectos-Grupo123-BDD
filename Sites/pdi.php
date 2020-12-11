@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  include('../templates/header_inicio.html');
+//   include('../templates/header_inicio.html');
   // header("Location: http://google.com/");
 ?>
 
