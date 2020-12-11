@@ -7,7 +7,6 @@
   $pass = $_POST["pass"];
 
   // $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '$user';";
-  echo "er1234 = $user";
   $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '$user';";
   $userResult = $db1 -> prepare($userQuery);
   $userResult -> execute();
@@ -21,6 +20,17 @@
   // include('../templates/header_inicio.html');
   // header("Location: http://google.com/");
 ?>
+
+<table>
+    <tr>
+      <th>Usuario</th>
+    </tr>
+  <?php
+	foreach ($usuario as $asd) {
+    echo "<tr><td>$asd[1]</td><td>$asd[4]</td><td>$asd[6]</td></tr>";
+	}
+  ?>
+</table>
 
 <body>
 </body>
