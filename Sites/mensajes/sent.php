@@ -19,7 +19,7 @@
     );
 
     $context  = stream_context_create( $options );
-    $result = file_get_contents( 'https://prometo-que-es-la-ultima.herokuapp.com/users/inbox/' . $uid, false, $context );
+    $result = file_get_contents( 'https://prometo-que-es-la-ultima.herokuapp.com/text-search', false, $context );
     $response = json_decode($result, true);
     ?>
 
