@@ -1,0 +1,58 @@
+ id  |               nombre               | edad |   sexo    | numero_pasaporte |    nacionalidad    |            contraseña
+-----+------------------------------------+------+-----------+------------------+--------------------+----------------------------------
+   1 | Alfredo                            |   22 | masculino | 19.893.134-9     | Chilena            | hola123
+   2 | Vicente                            |   22 | masculino | 20.011.770-0     | Chilena            | hola123
+   3 | Cristal Gaona Vazquez              |   60 | hombre    | E99654323        | LIBIA              | 10ced839e3bb20afe3d8ddd949b0c724
+   4 | Itzel Madrid Tello                 |   89 | mujer     | O26876875        | BIRMANA            | 31b6c1cf4db9e77e5bf64018af65a37b
+   5 | Eugenio Villanueva                 |   23 | mujer     | I59647599        | TURCA              | 00696058ff4036d3e1c95e6ec80affe6
+   6 | Estela Marroquin Ortiz             |   98 | mujer     | F44457948        | ALEMANA            | b21a1b13745902395d012b57c86a0904
+   7 | Juan Carlos Uriel Romero           |   38 | hombre    | F54286063        | BURKINA FASO       | d3c09eb5c25e88dfcdfcfb4d03ed2227
+   8 | Ofelia Navarro Davila              |   68 | hombre    | Z44372972        | BHUTANESA          | 771190389a1c9900aa75f547f4b8782d
+   9 | Lucia Palomo Olivera               |   35 | hombre    | J50508589        | NAMIBIANA          | 25c21c2cdd4a2600ded5411847e246d5
+  10 | Ana Noelia Barrios                 |   20 | mujer     | Y82472204        | KENIANA            | 5633601183bfacbcebde0411dea05c38
+  11 | Modesto Lucero Luna                |   28 | mujer     | Z12327276        | ESTONIA            | 719fa86a4f92283a86cc3eb3647b1b9e
+  12 | Mateo Claudio Leiva Valle          |   14 | hombre    | P21702655        | ZAMBIANA           | 0215e7811c6403a4ea3e67edb4895422
+  13 | Yolanda Blanco                     |   30 | mujer     | B95281165        | TRINITARIA         | f42db5b8f5401c32760889c68b5ad6f4
+  14 | Ivonne Montenegro                  |   85 | hombre    | J64594612        | NIGERINA           | d77eaf5317f7cbcef04a9f8adeb02424
+  15 | Laura Ramon                        |   65 | hombre    | M29889337        | MALDIVA            | 0e5ac713a155c1486166bbf54f598125
+  16 | Rosario Gregorio Godoy Jaimes      |   77 | mujer     | V37562483        | HINDU              | aba5e91fafc139377acb89262993a47d
+  17 | Liliana Quintero                   |   60 | hombre    | W71697646        | DE BAHREIN         | 420121ea21d3cd1bc7c7f027049a6d36
+  18 | Juan Carlos Abigail Anguiano Adame |   44 | mujer     | G52881568        | SWAZI              | 0be20992a1d0a5380855a1d77f74bd06
+  19 | Tomas Solis                        |   31 | mujer     | L18340568        | ZAMBIANA           | 3a14f0559274480af01d1ccdef537009
+  20 | Rosario Rojas Guardado             |   79 | mujer     | L72554373        | IRLANDESA          | c9485ca6a3c6e4658748e99e48ca64f6
+  21 | Guillermo Figueroa Casanova        |   98 | mujer     | J29686165        | NAURUANA           | b456e7769786ef42cf5ac39b385f49c2
+  22 | Caridad Alejandro Collado Esquivel |   10 | mujer     | B41943528        | SUIZA              | e4afd5646a72e2431fd6c4f4b025ef50
+  23 | Jaime Marisol Madrid               |   27 | hombre    | U71661520        | BRITANICA          | a2cb14759156b00b01e2c7736034152d
+  24 | Sofia Orellana Rosas               |   70 | mujer     | V42528064        | SUECA              | eba4a6f4c21a1db6ef48129527df171d
+  25 | Leticia Ureña                      |   70 | hombre    | T19743718        | SIRIA              | b8dd9e273bee2da1cad0a2eed702583b
+  26 | Caridad Ceja                       |   12 | hombre    | G10013637        | REINO UNIDO        | 9f15406a94f91585e3534dc5540fffaf
+  27 | Sara Villareal                     |   93 | mujer     | I45816186        | TAILANDESA         | bb9f6ce59c37462b3820aaba0a7c7e32
+  28 | Bernardo Raul Niño                 |   78 | mujer     | G28581662        | BHUTANESA          | d7bfe0fd2cf1fac6eb248d8574fa8e9c
+  29 | Minerva Israel Santacruz Sierra    |   80 | mujer     | F36197968        | REINO UNIDO        | 4e346c8e2b1002ca3d77004b889b2c99
+  30 | Dolores Hector Mata                |   66 | mujer     | F46237407        | MONGOLESA          | 484daa803867f8c9a8dc89a99d0b40af
+  31 | Graciela Gilberto Tamayo           |   12 | mujer     | P63907762        | ZAMBIANA           | 675316ffd6f5ec927219b4e32f169e2d
+  32 | Noelia Trujillo                    |   68 | mujer     | G20824518        | TANZANIANA         | 204a5932d3fbabb26053ac633e02b3b0
+  33 | Reina Adan Baeza Paez              |   95 | hombre    | P61007335        | YEMENI             | 5225760ca4d0ee584422306ef86cf914
+  34 | Maria Jose Berrios                 |   16 | mujer     | A99075356        | VATICANA           | afee9c6547d292b54b0bb1b82f179822
+  35 | Cristian Frias                     |   10 | mujer     | L53367487        | DE BAHREIN         | 7c98f9c889c4baff4e30a77a9481abeb
+  36 | Maria Eugenia Arroyo               |   23 | hombre    | G62088265        | BELGA              | 418a2cda7bc6949f0a1546006a2a0e3a
+  37 | Rocio Itzel Matias                 |   50 | hombre    | Z73076598        | RUMANA             | 66f679ac5af8b0fb333b1e47c5f80b7d
+  38 | Rufino Velasco                     |   37 | mujer     | D41778711        | GUINEA             | 326f398bcd2e2da605da02544f40a34d
+  39 | Ignacio Muñiz                      |   43 | mujer     | F24904237        | SAN MARINENSE      | 1df21a7573f5207ded294f1b94714625
+  40 | Julia Valdivia Florez              |   51 | mujer     | Q96850129        | PUERTORRIQUEÑA     | 5a789f163e9fe40c19f4a7be9802382f
+  41 | Julio Carrero Esparza              |   71 | mujer     | M38215478        | KUWAITI            | 31aebd2368f396c72fc4764f677d5355
+  42 | Angelica Mesa                      |   21 | mujer     | C86355149        | DE ZIMBAWI         | c20804b6ad308e4ec0ea83460d4611cb
+  43 | Augusto Irene Ceballos             |   15 | hombre    | J15119141        | AUSTRIACA          | 553ef0d8dd1b268fe4de91cc62e01ed3
+  44 | Aida Espinoza                      |   33 | mujer     | U44621636        | SALOMONESA         | 6f52ab916df63d1770badfc77a6e1b10
+  45 | Maximiliano Malave Serrano         |   41 | hombre    | F26110704        | MALAWIANA          | 8e07387cf66a790fc3629f8c585c08d5
+  46 | Fidel Emiliano Molina              |   62 | hombre    | W47775182        | TOGOLESA           | b8796afd017936bba7983ccce3d0f9b0
+  47 | Leonor Emilio Sosa                 |   59 | hombre    | N95498824        | PARAGUAYA          | 7c0982ce7995a329fbca1934a9c3d8cf
+  48 | Eduardo Pulido                     |   28 | hombre    | Z62349473        | FILIPINA           | 559687a34c83d75eeb0facc855b88d81
+  49 | Irma Casillas                      |   73 | hombre    | U43273299        | MALAWIANA          | 80bb4155e16712e5920f9bd8384968e7
+  50 | Camilo Camilo Bañuelos             |   17 | mujer     | C92774826        | IRANI              | 5863c281a41d82fee28a40c9324e5f97
+  51 | Martha Ceja                        |   83 | hombre    | R73647682        | YUGOSLAVA          | 7ac7d2be51e35f2b489cf7519fd99d4b
+  52 | Uriel Melgar González              |   74 | mujer     | I70460685        | BIRMANA            | 7cdf235033bfcd94d6b0c5a96e588799
+  53 | Nelly Rosa Quintero                |   64 | mujer     | U28796448        | NIGERINA           | 6bbdf17a0d055fcd9bdf5e2ec1f5560b
+  54 | Mercedes Reyes                     |   94 | hombre    | H12328752        | EGIPCIA            | 78f8e605c4507fbe015c54d059af9581
+  55 | Raquel Carreon                     |   23 | mujer     | P90466792        | PARAGUAYA          | 3a9e7721bf3c87ddb4a2d8966f45338b
+  56 | Eugenia Esperanza Galarza Mendez   |   73 | hombre    | O93555640        | ETIOPE             | 9c8a7e73259af2168863873584e8ddb0
