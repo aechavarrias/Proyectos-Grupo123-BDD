@@ -7,7 +7,7 @@
 
 <body>
 <br/><br/>
-  <h1 align="center">Bienvenid@ <?php echo $_SESSION["username"]; ?> al centro especial de la PDI?  </h1>
+  <h1 align="center">Bienvenid@ <?php echo $_SESSION["username"]; ?> al centro especial de la PDI  </h1>
   <div class="container">
   <form action="../pdi/mapa.php" method="post">
     <div class="text-center">
