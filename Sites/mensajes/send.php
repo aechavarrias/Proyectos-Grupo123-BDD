@@ -14,7 +14,7 @@
         'receptant' => $to,
         'lat' => -45.462659,
         'long' => -72.824656,
-        'date' => $date,
+        'date' => (string)$date,
     );
 
     $options = array(
