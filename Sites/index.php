@@ -11,7 +11,7 @@
 
   <br>
   
-  <form align="center" action="ingreso/perfil.php" method="post">
+  <form align="center" action="ingreso/ingresar.php" method="post">
     <div class="text-center">
     <div class="row align-items-stretch mb-5">
       <div class="col-md-6">
