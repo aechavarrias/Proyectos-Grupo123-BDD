@@ -5,7 +5,7 @@
 <body>
 <?php 
   $nombre = $_POST["nombre"];
-  echo $nombre;
+  echo "<tr> <td>$nombre</td> <td>";
 ?>
 <br/><br/>
   <h1 align="center">Inicio</h1>
