@@ -28,7 +28,7 @@
 <table align="center">
     <tr>
     <th>Fecha</th>
-        <th>Emisor</th>
+        <th>Receptor</th>
         <th>Mensaje</th>
         <th>MID</th>
         <th>LAT</th>
@@ -44,7 +44,7 @@
         $receptant  = $p["receptant"];
         $sender     = $p["sender"];
 
-    echo "<tr> <td>$date</td> <td>$sender</td> <td>$message</td> <td>$mid</td> <td>$lat</td> <td>$long</td> </tr>";
+    echo "<tr> <td>$date</td> <td>$receptant</td> <td>$message</td> <td>$mid</td> <td>$lat</td> <td>$long</td> </tr>";
     }
 ?>
 </table>
