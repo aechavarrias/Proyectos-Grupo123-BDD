@@ -9,6 +9,7 @@
 <body>
 <br/><br/>
   <h1 align="center">Login Fallido</h1>
+  <p style="text-align:center;" class="section-subheading text-muted" >Combinación Pasaporte - Contraseña Incorrecta</p>
   <div class="container">
   <form action="../index.php#ingresar" method="get">
     <div class="text-center">
