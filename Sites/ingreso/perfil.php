@@ -1,13 +1,13 @@
 <?php 
   session_start();
-  include('../templates/header_inicio.html');
+  // include('../templates/header_inicio.html');
+  header("Location: http://google.com/");
 ?>
-
 
 
 <body>
 <br/><br/>
-  <h1 align="center"><?php echo $_SESSION["ingresar"];?></h1>
+  <h1 align="center">Inicio</h1>
   <div class="container">
   <form action="../navegacion/mis_datos.php" method="post">
     <div class="text-center">
