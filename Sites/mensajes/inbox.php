@@ -5,7 +5,6 @@
 
 <body>
 <?php
-  #Llama a conexión, crea el objeto PDO y obtiene la variable $db
     $uid = (string)$_SESSION["MongoID"];
 
     $data = array(
@@ -27,27 +26,27 @@
   ?>
 
 
+<h1 align="center">Bandeja de Entrada</h1>
+<table align="center">
+<tr>
+    <th>Fecha</th>
+    <th>Emisor</th>
+    <th>Mensaje</th>
+    <th>MID</th>
+    <th>LAT</th>
+    <th>LONG</th>
+</tr>
+    <?php
+        foreach ($response as $p) {
+            $date       = $p["date"];
+            $lat        = $p["lat"];
+            $long       = $p["long"];
+            $message    = $p["message"];
+            $mid        = $p["mid"];
+            $receptant  = $p["receptant"];
+            $sender     = $p["sender"];
 
-	<table>
-    <tr>
-	  <th>Fecha</th>
-      <th>Emisor</th>
-      <th>Mensaje</th>
-      <th>MID</th>
-      <th>LAT</th>
-      <th>LONG</th>
-    </tr>
-  <?php
-	foreach ($response as $p) {
-        $date       = $p["date"];
-        $lat        = $p["lat"];
-        $long       = $p["long"];
-        $message    = $p["message"];
-        $mid        = $p["mid"];
-        $receptant  = $p["receptant"];
-        $sender     = $p["sender"];
-
-		echo "<tr> <td>$date</td> <td>$sender</td> <td>$message</td> <td>$mid</td> <td>$lat</td> <td>$long</td> </tr>";
-	  }
-  ?>
-	</table>
+            echo "<tr> <td>$date</td> <td>$sender</td> <td>$message</td> <td>$mid</td> <td>$lat</td> <td>$long</td> </tr>";
+        }
+    ?>
+</table>

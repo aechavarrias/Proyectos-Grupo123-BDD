@@ -20,7 +20,7 @@
 
   <br/><br/>
 
-  <form action="../consultas/consulta_navieras.php" method="post">
+  <form action="../mensajes/sent.php" method="post">
   <div class="text-center">
         <div id="success"></div>
         <button class="btn btn-primary btn-xl text-uppercase" value="ver_navieras" id="navieras" type="submit">Mensajes Enviados</button>
