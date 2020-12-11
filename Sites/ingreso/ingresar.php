@@ -12,25 +12,14 @@
   $userResult -> execute();
   $usuario = $userResult -> fetchAll();
 
-  // if ($pass == $usuario) {
-  //   code to be executed if condition is true;
-  // } else {
-  //   code to be executed if condition is false;
-  // }
+  if ($user == $usuario[0][4]) {
+    header("Location: http://google.com/");
+  } else {
+    header("Location: http://twitter.com/");
+  }
   // include('../templates/header_inicio.html');
   // header("Location: http://google.com/");
 ?>
-
-<table>
-    <tr>
-      <th>Usuario</th>
-    </tr>
-  <?php
-	foreach ($usuario as $asd) {
-    echo "<tr><td>$asd[1]</td><td>$asd[4]</td><td>$asd[6]</td></tr>";
-	}
-  ?>
-</table>
 
 <body>
 </body>
