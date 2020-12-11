@@ -2,7 +2,7 @@ from flask import Flask, request, json, Response, jsonify
 from pymongo import MongoClient, DESCENDING
 import json
 
-app = Flask(__name__)
+app = Flask("Navieras")
 
 MESSAGE_KEYS = ["message", "sender", "receptant", "lat", "long", "date"]
 SEARCH_KEYS = ["desired", "required", "forbidden", "userId"]
