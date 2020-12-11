@@ -6,7 +6,7 @@
   $user = $_POST["pasaporte"];
   $pass = $_POST["contraseña"];
 
-  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$pasaporte%';";
+  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$user%';";
   $userResult = $db1 -> prepare($userQuery);
   $userResult -> execute();
   $usuario = $userResult -> fetchAll();
@@ -20,7 +20,7 @@
     </tr>
   <?php
 	foreach ($usuario as $asd) {
-    echo "<tr><td>$asd[0]</td><td>$asd[1]</td><td>$asd[2]</td><td>$asd[3]</td><td>$asd[4]</td><td>$asd[5]</td></tr>";
+    echo "<tr><td>$asd[0]</td><td>$asd[1]</td><td>$asd[2]</td><td>$asd[3]</td><td>$asd[4]</td><td>$asd[5]</td></tr>$asd[6]</td></tr>$asd[7]</td></tr>$asd[8]</td></tr>";
 	}
   ?>
 </table>
