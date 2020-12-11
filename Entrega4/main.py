@@ -20,6 +20,8 @@ db = client["grupo123"]
 dbUsuarios = db.usuarios
 dbMessages = db.mensajes
 
+#hola
+
 @app.route("/")
 def home():
     '''
