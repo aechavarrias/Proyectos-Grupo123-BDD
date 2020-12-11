@@ -1,7 +1,5 @@
 <?php 
     session_start();
-    include('../templates/header_inicio.html');
-
     require("../config/conexion.php");
 
     $msg = $_POST["message"]; 
@@ -10,7 +8,7 @@
 
     $data = array(
         'message' => $msg,
-        'sender' => $_SESSION["MongoID"],
+        'sender' => intval($_SESSION["MongoID"]),
         'receptant' => $to,
         'lat' => -45.462659,
         'long' => -72.824656,
