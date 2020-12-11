@@ -16,6 +16,4 @@ contraseña:  53013d0a71f612fc4cc7522a78c4699a
 
 Las funcionalidades básicas se encuentran disponibles e implementadas y las funcionalidades para la pedi no están implementadas pero se muestra el mapa
 
-Para el text search
-
 <http://codd.ing.puc.cl/~grupo123/>
