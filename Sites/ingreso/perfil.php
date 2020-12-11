@@ -12,7 +12,7 @@
   <form action="../mensajes/inbox.php" method="post">
     <div class="text-center">
         <div id="success"></div>
-        <button class="btn btn-primary btn-xl text-uppercase" id="perfil" value="ver_perfil" type="submit">Mensajes Recibidos</button>
+        <button class="btn btn-primary btn-xl text-uppercase" id="inbox" value="inbox" type="submit">Mensajes Recibidos</button>
     </div>
     <br/>
     <br/><br/>
@@ -23,7 +23,7 @@
   <form action="../mensajes/sent.php" method="post">
   <div class="text-center">
         <div id="success"></div>
-        <button class="btn btn-primary btn-xl text-uppercase" value="ver_navieras" id="navieras" type="submit">Mensajes Enviados</button>
+        <button class="btn btn-primary btn-xl text-uppercase" value="enviados" id="enviados" type="submit">Mensajes Enviados</button>
     </div>
     <br/>
     <br/><br/>
@@ -31,11 +31,11 @@
 
   <br/><br/>
 
-  <form action="../consultas/consulta_puertos.php" method="post">
+  <form action="../mensajes/sendForm.php" method="post">
   <div class="text-center">
     <div class="text-center">
         <div id="success"></div>
-        <button class="btn btn-primary btn-xl text-uppercase" value="ver_puertos" id="puertos" type="submit">Enviar Mensaje</button>
+        <button class="btn btn-primary btn-xl text-uppercase" value="enviar" id="enviar" type="submit">Enviar Mensaje</button>
     </div>
     <br/>
     <br/><br/>
