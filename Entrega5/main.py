@@ -112,7 +112,15 @@ def messages():
                 return jsonify(payload), 201
 
         # Si no tiene los tipos adecuados
-        return Response("", status=400)
+        informativeResponse = [
+            f"message = {type(payload['message']) is str}",
+            f"sender is {type(payload['sender']) is int}",
+            f"receptant is {type(payload['receptant']) is int}",
+            f"lat is {type(payload['lat']) is float}",
+            f"long is {type(payload['long']) is float}",
+            f"date is {type(payload['date']) is str}"
+        ]
+        return jsonify(informativeResponse), 200
 
 
     if request.method == "GET":
