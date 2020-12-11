@@ -2,12 +2,11 @@
   session_start();
   $_SESSION["ingresar"] = "INRESAR";
   include('templates/header.html'); 
-
 ?>
 
 <body>
 <br/><br/>
-  <h1 align="center" href="#ingresar" id="ingresar"><?php echo $_SESSION["ingresar"];?></h1>
+  <h1 align="center" href="#ingresar" id="ingresar">INGRESAR</h1>
   <p style="text-align:center;" class="section-subheading text-muted" >Ingresa tus datos para acceder!</p>
 
   <br>
