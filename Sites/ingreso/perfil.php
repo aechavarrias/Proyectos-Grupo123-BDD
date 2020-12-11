@@ -1,6 +1,12 @@
 <?php include('../templates/header_inicio.html');   ?>
 
+
+
 <body>
+<?php 
+  $nombre = $_POST["nombre"];
+  echo $nombre;
+?>
 <br/><br/>
   <h1 align="center">Inicio</h1>
   <div class="container">
