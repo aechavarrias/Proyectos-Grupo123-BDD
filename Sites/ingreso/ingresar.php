@@ -20,7 +20,7 @@
     </tr>
   <?php
 	foreach ($usuario as $asd) {
-    echo "<tr><td>$asd[1]</td></tr>$asd[4]</td></tr>$asd[6]</td></tr>";
+    echo "<tr><td>$asd[1]</td><td>$asd[4]</td><td>$asd[6]</td></tr>";
 	}
   ?>
 </table>
