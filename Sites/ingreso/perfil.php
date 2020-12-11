@@ -9,7 +9,7 @@
 <br/><br/>
   <h1 align="center">Bienvenid@ <?php echo $_SESSION["username"]; ?> de ID: <?php echo $_SESSION["MongoID"];?>  </h1>
   <div class="container">
-  <form action="../navegacion/mis_datos.php" method="post">
+  <form action="../mensajes/inbox.php" method="post">
     <div class="text-center">
         <div id="success"></div>
         <button class="btn btn-primary btn-xl text-uppercase" id="perfil" value="ver_perfil" type="submit">Mensajes Recibidos</button>
