@@ -6,7 +6,6 @@
 	crossorigin=""/>
  </head>
  <body>
- <?php echo '<p>Hello World</p>'; ?> 
  <?php 
     $lat = -33.5;
     $long = -70.5;
