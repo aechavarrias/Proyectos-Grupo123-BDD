@@ -22,17 +22,6 @@
   // header("Location: http://google.com/");
 ?>
 
-<table>
-    <tr>
-      <th>Usuario</th>
-    </tr>
-  <?php
-	foreach ($usuario as $asd) {
-    echo "<tr><td>$asd[1]</td><td>$asd[4]</td><td>$asd[6]</td></tr>";
-	}
-  ?>
-</table>
-
 <body>
 </body>
 </html>
