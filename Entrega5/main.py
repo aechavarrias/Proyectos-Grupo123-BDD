@@ -62,6 +62,11 @@ def textSearch():
         textQuery +="\""+ r + "\" "
     for f in payload["forbidden"]:
         textQuery +="-" + f + " "
+    
+    try:
+        textQuery = payload["pureQuery"]
+    except KeyError:
+        pass
 
     # Si hay solo forbidden
     if len(payload["desired"] + payload["required"]) == 0:
