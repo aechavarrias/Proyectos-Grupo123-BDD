@@ -141,6 +141,14 @@ def message_id(id):
 
 @app.route('/users', methods=['GET'])
 def users():                                # Todos los usuarios
+    try:
+        usr1 = request.args["nombre"]
+        users = list(dbUsuarios.find({"name":usr1}, {"_id": 0}))
+        return jsonify(users)
+    except KeyError:
+        users = list(dbUsuarios.find({}, {"_id": 0}))
+        return jsonify(users)
+        
     users = list(dbUsuarios.find({}, {"_id": 0}))
     return jsonify(users)
 
