@@ -9,14 +9,14 @@
     $query = $_POST["query"]; 
     $to = $_POST["sender"];
 
-    if !($query == "") {
+    if ($query != "") {
         $queryArr = array("pureQuery" => $query);
     }
     else {
         $queryArr = array();
     }
 
-    if !($to == "") {
+    if ($to != "") {
         $toArr = array("userId" => intval($to));
     }
     else {
