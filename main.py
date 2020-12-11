@@ -20,6 +20,13 @@ db = client["grupo123"]
 dbUsuarios = db.usuarios
 dbMessages = db.mensajes
 
+@app.route("/")
+def home():
+    '''
+    Pagina de inicio
+    '''
+    return("<h1>pagina culiaaaaa</h1>")
+
 def forbiddenFilter(keywords, message):     # Funcion para eliminar Forbiddens en busquedas vacías
     try:
         for word in keywords:
