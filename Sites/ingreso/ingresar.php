@@ -6,10 +6,16 @@
   $user = $_POST["pasaporte"];
   $pass = $_POST["contraseña"];
 
-  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '%$user%';";
+  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte = '%$user%';";
   $userResult = $db1 -> prepare($userQuery);
   $userResult -> execute();
   $usuario = $userResult -> fetchAll();
+
+  // if ($pass == $usuario) {
+  //   code to be executed if condition is true;
+  // } else {
+  //   code to be executed if condition is false;
+  // }
   // include('../templates/header_inicio.html');
   // header("Location: http://google.com/");
 ?>
