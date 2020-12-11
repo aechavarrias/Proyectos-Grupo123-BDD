@@ -1,7 +1,5 @@
 <?php 
     session_start();
-    include('../templates/header_inicio.html');
-
     require("../config/conexion.php");
 
     $msg = $_POST["message"]; 
