@@ -28,12 +28,4 @@
     $response = json_decode($result, true);
 
     header("Location: ../mensajes/sent.php");
-
-//     $_SESSION["MongoID"] = $response[0]['uid'];
-//     header("Location: ../ingreso/perfil.php");
-//   } else {
-//     header("Location: ../ingreso/failedLogin.php");
-//   }
-  // include('../templates/header_inicio.html');
-  // header("Location: http://google.com/");
 ?>
