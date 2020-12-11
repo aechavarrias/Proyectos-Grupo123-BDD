@@ -8,6 +8,19 @@
 
     <body>
 
+    <?php
+    $lat = -33.5;
+    $long = -70.5;
+    $marker_list = [
+        ["lat" => -33.4,
+        "long" => -70.5];
+        ["lat" => -33.6,
+        "long" => -70.5];
+        ["lat" => -33.5,
+        "long" => -70.6];
+    ];
+    ?>
+
     <div id="mapid" style="height: 500px"></div>
 
     </body>
@@ -15,15 +28,10 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
     <script>
-        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-        
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        maxZoom: 18,
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1,
-        accessToken: 'your.mapbox.access.token'
+        var mymap = L.map('mapid').setView(<?php echo $lat ?>, <?php echo $long ?>, 10);
+
+        L.tileLayer('https://{s}.title.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(mymap);
     </script>
 </html>
