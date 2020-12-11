@@ -175,6 +175,11 @@ def users():                                # Todos los usuarios
 def users_id(id):                           # Usuario del id pedido
     users = list(dbUsuarios.find({"uid":id}, {"_id": 0}))
     return jsonify(users)
+    
+@app.route('/users/inbox/<int:id>', methods=['GET'])
+def user_inbox(id):                           # inbox del usuario pedido
+    inbox = list(dbMessages.find({"receptant":id}, {"_id": 0}))
+    return jsonify(inbox)
 
 if __name__ == "__main__":
     app.run(threaded=True, port=5000)
