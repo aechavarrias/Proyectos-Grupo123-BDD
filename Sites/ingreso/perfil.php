@@ -66,6 +66,19 @@
     <br/>
     <br/><br/>
 
+  </form>
+
+  <br/><br/>
+
+  <form action="../pdi.php" method="post">
+  <div class="text-center">
+    <div class="text-center">
+        <div id="success"></div>
+        <button class="btn btn-primary btn-xl text-uppercase" value="enviar" id="enviar" type="submit">PDI only</button>
+    </div>
+    <br/>
+    <br/><br/>
+
     </form>
     </div>
   <br>
