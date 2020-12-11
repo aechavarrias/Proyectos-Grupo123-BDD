@@ -9,7 +9,8 @@
     $query = $_POST["query"]; 
     $to = $_POST["sender"];
     $data = array(
-      'userId' => $_SESSION["MongoID"]
+      'userId' => intval($to),
+      'pureQuery' => $query
     );
 
     $options = array(
