@@ -151,7 +151,7 @@ def message_id(id):
 @app.route('/users/nombre', methods=['GET'])
 def usersNombre():                          # Todos los usuarios
     try:
-        usr1 = request.args["nombre"]
+        usr1 = request.json["nombre"]
         users = list(dbUsuarios.find({"name":usr1}, {"_id": 0}))
         return jsonify(users)
     except KeyError:
@@ -161,7 +161,7 @@ def usersNombre():                          # Todos los usuarios
 @app.route('/users', methods=['GET'])
 def users():                                # Todos los usuarios
     try:
-        usr1 = request.args["nombre"]
+        usr1 = request.json["nombre"]
         users = list(dbUsuarios.find({"name":usr1}, {"_id": 0}))
         return jsonify(users)
     except KeyError:
