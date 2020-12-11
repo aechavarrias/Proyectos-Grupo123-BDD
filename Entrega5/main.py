@@ -62,14 +62,15 @@ def textSearch():
         textQuery +="\""+ r + "\" "
     for f in payload["forbidden"]:
         textQuery +="-" + f + " "
-    
+    pure = False
     try:
         textQuery = payload["pureQuery"]
+        pure = True
     except KeyError:
         pass
 
     # Si hay solo forbidden
-    if len(payload["desired"] + payload["required"]) == 0:
+    if len(payload["desired"] + payload["required"]) == 0 and not pure:
         user_searched = payload["userId"]
         if user_searched > -1:
             allMsgs = list(dbMessages.find({"sender": user_searched}, {"_id": 0}))
