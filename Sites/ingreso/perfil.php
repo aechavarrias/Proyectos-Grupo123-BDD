@@ -57,7 +57,7 @@
 
   <br/><br/>
 
-  <form action="../pdi.php" method="post">
+  <form action="../pdi/pdi.php" method="post">
   <div class="text-center">
     <div class="text-center">
         <div id="success"></div>
