@@ -40,7 +40,7 @@
     ?>
 
 
-<h1 align="center">Mensajes Enviados</h1>
+<h1 align="center">TEXT SEARCH</h1>
 <table align="center">
     <tr>
     <th>Fecha</th>
