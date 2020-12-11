@@ -42,7 +42,3 @@
 ?>
 
 <body>
-</body>
-<?php include('../templates/footer.html');   ?>
-</html>
-</html>
