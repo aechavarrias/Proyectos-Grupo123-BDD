@@ -8,7 +8,7 @@
     $data = array(
         'message' => $msg,
         'sender' => intval($_SESSION["MongoID"]),
-        'receptant' => $to,
+        'receptant' => intval($to),
         'lat' => -45.462659,
         'long' => -72.824656,
         'date' => (string)$date,
