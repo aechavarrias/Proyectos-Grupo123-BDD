@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  include('templates/header.html'); 
+  include('../templates/header.html'); 
 ?>
 
 <body>
@@ -32,5 +32,5 @@
   </form>
 
 </body>
-<?php include('templates/footer.html');   ?>
+<?php include('../templates/footer.html');   ?>
 </html>

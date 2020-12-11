@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    include('templates/header.html'); 
+    include('../templates/header.html'); 
 
     require("../config/conexion.php");
 
@@ -29,7 +29,7 @@
     $context  = stream_context_create( $options );
     $result = file_get_contents( 'https://prometo-que-es-la-ultima.herokuapp.com/messages', false, $context );
     $response = json_decode($result, true);
-    
+
     header("Location: ../mensajes/sent.php");
 
 //     $_SESSION["MongoID"] = $response[0]['uid'];
@@ -43,4 +43,6 @@
 
 <body>
 </body>
+<?php include('../templates/footer.html');   ?>
+</html>
 </html>
