@@ -1,5 +1,8 @@
 <?php 
   session_start();
+
+  require("../config/conexion.php");
+  
   $user = $_POST["pasaporte"];
   $pass = $_POST["contraseña"];
 
