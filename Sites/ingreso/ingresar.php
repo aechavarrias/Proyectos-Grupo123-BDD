@@ -33,8 +33,8 @@
     $result = file_get_contents( 'https://prometo-que-es-la-ultima.herokuapp.com/users/nombre', false, $context );
     $response = json_decode($result, true);
     echo "response = $response \n";
-    echo "name = $response["name"] \n";
-    echo "ID = $response["uid"] \n";
+    echo "name = $response['name'] \n";
+    echo "ID = $response['uid'] \n";
 
     // WEVIAR A MONGO / HEROKU
     $_SESSION["MongoID"] = 0;
