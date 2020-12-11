@@ -4,7 +4,7 @@
 ?>
 
 <body>
-<h1 align="center" href="#enviar" id="enviar" >ENVÍA UN MENSAJE </h1>
+<h1 align="center" href="#enviar" id="enviar" >ENVÍA UN MENSAJE</h1>
 
   <br>
   
@@ -20,7 +20,7 @@
           <p class="help-block text-danger"></p>
         </div> 
            
-        </div>            
+        </div>
       </div>
 
     <div class="text-center">
