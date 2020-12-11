@@ -7,7 +7,8 @@
   $pass = $_POST["contraseña"];
 
   // $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '$user';";
-  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE 'er1234';";
+  echo $user;
+  $userQuery = "SELECT * FROM usuarios WHERE numero_pasaporte LIKE '$user';";
   $userResult = $db1 -> prepare($userQuery);
   $userResult -> execute();
   $usuario = $userResult -> fetchAll();
