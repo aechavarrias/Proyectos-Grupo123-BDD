@@ -12,7 +12,7 @@
   <form action="../navegacion/mis_datos.php" method="post">
     <div class="text-center">
         <div id="success"></div>
-        <button class="btn btn-primary btn-xl text-uppercase" id="perfil" value="ver_perfil" type="submit">Mi perfil</button>
+        <button class="btn btn-primary btn-xl text-uppercase" id="perfil" value="ver_perfil" type="submit">Mensajes Recibidos</button>
     </div>
     <br/>
     <br/><br/>
@@ -23,7 +23,7 @@
   <form action="../consultas/consulta_navieras.php" method="post">
   <div class="text-center">
         <div id="success"></div>
-        <button class="btn btn-primary btn-xl text-uppercase" value="ver_navieras" id="navieras" type="submit">Ver Navieras</button>
+        <button class="btn btn-primary btn-xl text-uppercase" value="ver_navieras" id="navieras" type="submit">Mensajes Enviados</button>
     </div>
     <br/>
     <br/><br/>
@@ -35,10 +35,24 @@
   <div class="text-center">
     <div class="text-center">
         <div id="success"></div>
-        <button class="btn btn-primary btn-xl text-uppercase" value="ver_puertos" id="puertos" type="submit">Ver Puertos</button>
+        <button class="btn btn-primary btn-xl text-uppercase" value="ver_puertos" id="puertos" type="submit">Enviar Mensaje</button>
     </div>
     <br/>
     <br/><br/>
+  
+  </form>
+
+  <br/><br/>
+
+  <form action="../consultas/consulta_puertos.php" method="post">
+  <div class="text-center">
+    <div class="text-center">
+        <div id="success"></div>
+        <button class="btn btn-primary btn-xl text-uppercase" value="ver_puertos" id="puertos" type="submit">Buscar Mensaje Por Texto</button>
+    </div>
+    <br/>
+    <br/><br/>
+
     </form>
     </div>
   <br>
