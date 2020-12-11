@@ -33,16 +33,8 @@
     $result = file_get_contents( 'https://prometo-que-es-la-ultima.herokuapp.com/users/nombre', false, $context );
     $response = json_decode($result, true);
 
-    $apiName = $response[0]['name'];
-    $apiId = $response[0]['uid'];
-
-    echo "response = $response \n";
-    echo "name = $apiName \n";
-    echo "ID = $apiId \n";
-
-    // WEVIAR A MONGO / HEROKU
-    $_SESSION["MongoID"] = 0;
-    // header("Location: ../ingreso/perfil.php");
+    $_SESSION["MongoID"] = $response[0]['uid'];
+    header("Location: ../ingreso/perfil.php");
   } else {
     header("Location: http://twitter.com/");
   }

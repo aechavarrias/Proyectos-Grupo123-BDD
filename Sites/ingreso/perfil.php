@@ -7,7 +7,7 @@
 
 <body>
 <br/><br/>
-  <h1 align="center">Bienvenid@ <?php echo $_SESSION["username"]; ?>  </h1>
+  <h1 align="center">Bienvenid@ <?php echo $_SESSION["username"]; ?> de ID: <?php echo $_SESSION["MongoID"];?>  </h1>
   <div class="container">
   <form action="../navegacion/mis_datos.php" method="post">
     <div class="text-center">
