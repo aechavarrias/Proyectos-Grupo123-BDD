@@ -16,7 +16,7 @@
             <p class="help-block text-danger"></p>
         </div>
         <div class="form-group">
-          <input class="form-control" id="query" type="text" name="query" placeholder='ejemplo busqueda: "Pepito "paga" -doble' data-validation-required-message='Text Search: "Juangui" es -feo ' />
+          <input class="form-control" id="query" type="text" name="query" placeholder='ejemplo busqueda: Pepito "paga" -doble' data-validation-required-message='Text Search: "Juangui" es -feo ' />
           <p class="help-block text-danger"></p>
         </div> 
            
