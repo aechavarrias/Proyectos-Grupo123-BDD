@@ -1,6 +1,5 @@
 <?php 
     session_start();
-    require("../config/conexion.php");
 
     $msg = $_POST["message"]; 
     $to = $_POST["receptant"];
@@ -28,7 +27,7 @@
     $result = file_get_contents( 'https://prometo-que-es-la-ultima.herokuapp.com/messages', false, $context );
     $response = json_decode($result, true);
 
-    header("Location: ../mensajes/sent.php");
+    // header("Location: ../mensajes/sent.php");
 
 //     $_SESSION["MongoID"] = $response[0]['uid'];
 //     header("Location: ../ingreso/perfil.php");
@@ -40,3 +39,14 @@
 ?>
 
 <body>
+<table align="center">
+<tr>
+    <th>RESPUESTA</th>
+</tr>
+    <?php
+        foreach ($response as $p) {
+
+            echo "<tr><td>$p</td></tr>";
+        }
+    ?>
+</table>
